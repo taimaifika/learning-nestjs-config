@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: learning-nestjs-config
+spec:
+  destination:
+    name: ''
+    namespace: develop
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: charts/learning-nestjs
+    repoURL: 'https://github.com/taimaifika/learning-nestjs-config.git'
+    targetRevision: HEAD
+  sources: []
+  project: develop
+  syncPolicy:
+    automated: null
