@@ -534,7 +534,8 @@ primary:
   service:
     ## @param primary.service.type MySQL Primary K8s service type
     ##
-    type: ClusterIP
+    # type: ClusterIP
+    type: NodePort
     ## @param primary.service.ports.mysql MySQL Primary K8s service port
     ## @param primary.service.ports.mysqlx MySQL Primary K8s service mysqlx port
     ##
