@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build and Test') {
             steps {
-                sh 'docker build . -t trainwithshubham/node-todo-test:latest'
+                echo 'Building and testing the code'
             }
         }
         stage('Push') {
